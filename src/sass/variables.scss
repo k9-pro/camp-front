@@ -1,0 +1,9 @@
+// 기본 스타일 설정 변경 파일 https://vuetifyjs.com/en/features/sass-variables/#example-variable-file
+$font-size-root: 14px;
+$btn-sizes: (
+    'x-small': 20,
+    'small': 28,
+    'default': 36,
+    'large': 44,
+    'x-large': 52
+);

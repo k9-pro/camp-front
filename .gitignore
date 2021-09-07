@@ -4,6 +4,8 @@ node_modules
 
 
 # local env files
+.env
+.env.development
 .env.local
 .env.*.local
 
@@ -21,3 +23,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+#test
+/src/App_test.vue
+/src/views/layout/content/Breakpoints.vue
+/src/views/layout/content/GridListPage.vue
+/src/views/layout/content/GridSystem.vue
+/src/views/layout/content/Typography.vue
