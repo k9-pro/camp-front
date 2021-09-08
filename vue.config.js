@@ -3,6 +3,7 @@ const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' 
 const { styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 
 module.exports = {
+    parallel:false,
     transpileDependencies: [
         /ckeditor5-[^/\\]+[/\\]src[/\\].+\.js$/,
         'vuetify'
@@ -10,7 +11,8 @@ module.exports = {
     runtimeCompiler: true,
     devServer: {
         // proxy: 'http://ec2-3-36-97-51.ap-northeast-2.compute.amazonaws.com',
-        proxy: 'http://localhost:8000',
+        // proxy: 'http://localhost:8000',
+        proxy: process.env.VUE_APP_HOSTNAME,
     },
     configureWebpack: {
         plugins: [
@@ -69,5 +71,6 @@ module.exports = {
                     minify: true
                 } );
             } );
-    }
+    },
+
 }
