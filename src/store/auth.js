@@ -97,6 +97,8 @@ export default {
             if(localStorage.getItem('login')) {
                 const getData = await getUser().then(response => {
                     commit('loginSuccess',response)
+                }).catch(error => {
+                    localStorage.removeItem('login')
                 })
             } else {
                 state.userInfo = null
