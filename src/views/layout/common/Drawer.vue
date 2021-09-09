@@ -2,7 +2,6 @@
   <v-navigation-drawer
     v-bind="$attrs"
     app
-    absolute
     temporary
   >
     <v-list-item>
