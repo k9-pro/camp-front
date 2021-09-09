@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { axios } from '@/config/axios/index.js'
 
 //공지 게시판
 export const getNotice = async ({ params }) => axios.get('/board/notice/', {params})

@@ -1,5 +1,5 @@
-//자유 게시판
-import axios from "axios";
+//후기 게시판
+import { axios } from '@/config/axios/index.js'
 
 export const getPost = async ({ params }) => axios.get('/board/post/', {params})
 export const getPostDetail = async (data) => axios.get('/board/post/'+data+'/')

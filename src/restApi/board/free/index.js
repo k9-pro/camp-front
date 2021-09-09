@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { axios } from '@/config/axios/index.js'
 
 //자유 게시판
 export const getFree = async ({ params }) => axios.get('/board/free/', {params})

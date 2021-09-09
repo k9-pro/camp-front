@@ -1,4 +1,6 @@
-import axios from 'axios';
+import { axios } from '@/config/axios';
+
+
 
 axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
