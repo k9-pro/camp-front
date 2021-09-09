@@ -78,10 +78,10 @@ export default {
     }
 }
 </script>
-<style lang="css">
+<style>
 .custom5cols{
-    width: 20%;
-    max-width: 20%;
-    flex-basis: 20%;
+    width: 20% !important;
+    max-width: 20% !important;
+    flex-basis: 20% !important;
 }
 </style>

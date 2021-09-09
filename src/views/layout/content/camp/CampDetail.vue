@@ -351,8 +351,8 @@ export default {
 </script>
 <style lang="css">
 .custom7cols{
-    width: 14%;
-    max-width: 14%;
-    flex-basis: 14%;
+    width: 14% !important;
+    max-width: 14% !important;
+    flex-basis: 14% !important;
 }
 </style>
