@@ -8,6 +8,7 @@
     <v-col
       v-for="camp in camps"
       :key="camp.id"
+      cols="12"
       xs="12"
       sm="6"
       md="4"
@@ -88,6 +89,7 @@ export default {
     methods: {
         async fetchData() {
             const getData = await getSite({region: +this.$route.params.id});
+            console.log(getData);
             this.camps = getData.results;
             if(this.camps.length === 0) {
                 this.$emit('childIsFillHeight',true);
