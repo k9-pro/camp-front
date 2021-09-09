@@ -33,6 +33,7 @@
               type="email"
               v-model="email"
               prepend-icon="mdi-email"
+              @keyup.enter="$store.dispatch('auth/login',{email,password})"
             />
               <v-alert text :value="isLoginError.email" type="error" class="pa-0 text-left" >{{loginErrorMsg.email}}</v-alert>
             <v-text-field
@@ -40,6 +41,7 @@
               type="password"
               v-model="password"
               prepend-icon="mdi-lock-outline"
+              @keyup.enter="$store.dispatch('auth/login',{email,password})"
             />
               <v-alert text :value="isLoginError.password" type="error" class="pa-0 text-left" >{{loginErrorMsg.password}}</v-alert>
             <v-btn
