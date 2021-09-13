@@ -59,8 +59,8 @@
                                                         dark
                                                         :src="s3root+item.photo"
                                                         aspect-ratio="0.1"
-                                                        min-height="140"
-                                                        max-height="140"
+                                                        min-height="136"
+                                                        max-height="136"
                                                     />
                                                 </v-card>
                                             </v-col>
@@ -69,15 +69,16 @@
                                                     <v-col class="text-h7 font-weight-bold post-title pa-0" >{{item.title}}</v-col>
 
 
-                                                    <v-col cols="3" sm="2" class="pa-0 text-right">
-                                                        <span class="font-weight-thin text-caption">{{item.created_at}}</span>
-                                                    </v-col>
+
 
                                                 </v-card-title>
-                                                <v-card-text class="post-truncate">{{item.content}}</v-card-text>
+                                                <v-card-text class="post-truncate" v-html="item.content"></v-card-text>
                                                 <v-card-actions class="font-weight-light text-caption pa-0">
-                                                    <v-col cols="12" class="">
+                                                    <v-col>
                                                          <b class="font-size-bold">{{item.user.username}}</b>
+                                                    </v-col>
+                                                    <v-col cols="6"  class="pr-3 text-right">
+                                                        <span class="font-weight-thin text-caption">{{item.created_at}}</span>
                                                     </v-col>
                                                 </v-card-actions>
                                             </v-col>
