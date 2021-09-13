@@ -8,21 +8,21 @@
                 <v-col>
                     <v-row>
                         <v-col
-                            cols="8"
+                            cols="7"
                             lg="10"
                             md="9"
-                            sm="8"
-                            xs="8"
+                            sm="7"
+                            xs="7"
                         >
                             작성자 {{data.user.username}}
                         </v-col>
                         <v-col
                             class="pa-1"
-                            cols="4"
+                            cols="5"
                             lg="2"
                             md="3"
-                            sm="4"
-                            xs="4"
+                            sm="5"
+                            xs="5"
                         >
                             <span class="float-right">
                                 <v-btn
