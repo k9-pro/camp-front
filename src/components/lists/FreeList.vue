@@ -27,6 +27,7 @@
       :items="data"
       :search="search"
       :loading="loading"
+      disable-sort
     >
         <template v-slot:item="{ item }" >
             <tr @click="detailView(item.id)" class="pointer">
